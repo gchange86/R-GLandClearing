@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="R & G Land Clearing LLC offers expert demolition, site cleanup, and land clearing services in Old Fort, TN.">
+  <title>R & G Land Clearing LLC</title>
+  <style>
+ body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header-content {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.header-content h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.header-content p {
+  margin: 5px 0 0;
+  font-size: 1.1em;
+  font-style: italic;
+}
+
+nav {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.section {
+  padding: 40px 20px;
+}
+
+.services {
+  background: #fff9c4;
+  margin-bottom: 20px;
+}
+
+.service-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.service-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.service-card h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+  color: #0077cc;
+}
+
+.service-card p {
+  font-size: 0.95em;
+  color: #333;
+}
+
+.safety {
+  background: #e8f5e9;
+  margin-bottom: 20px;
+}
+
+.safety-content {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.safety-content h2 {
+  font-size: 2em;
+  color: #2e7d32;
+  margin-bottom: 15px;
+}
+
+.safety-content p {
+  font-size: 1.1em;
+  color: #444;
+  line-height: 1.6;
+}
+
+.testimonials {
+  background: #fefefe;
+  margin-bottom: 20px;
+}
+
+.testimonial-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.testimonial-card {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.testimonial-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.testimonial-overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.testimonial-overlay p {
+  font-size: 0.95em;
+  margin: 0 0 10px;
+}
+
+.testimonial-overlay h4 {
+  margin: 0;
+  font-size: 1em;
+  color: #ffd54f;
+}
+
+.bbb {
+  text-align: right;
+  padding-right: 40px;
+}
+
+.bbb h2 {
+  font-size: 1.6em;
+  color: #0077cc;
+  margin: 0;
+}
+
+.bbb h3 {
+  font-size: 1.1em;
+  color: #333;
+  margin: 5px 0 0;
+}
+
+.bbb a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.bbb a:hover {
+  text-decoration: underline;
+  color: #005999;
+}
+
+.about, .contact {
+  background: #f4f4f4;
+  margin-bottom: 20px;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.bbb-heading {
+  color: #0077cc; /* blue text */
+  animation: glow 1.5s infinite alternate;
+}
+
+.torch {
+  color: #0077cc; /* blue torch */
+  font-size: 1.4em;
+  display: inline-block;
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #0077cc, 0 0 10px #3399ff;
+    opacity: 0.9;
+  }
+  to {
+    text-shadow: 0 0 15px #66ccff, 0 0 25px #3399ff;
+    opacity: 1;
+  }
+}
+.bbb-seal {
+  text-align: right;
+  margin-top: 20px;
+}
+.bbb-seal-img {
+  width: 300px;
+  height: auto;
+}
+.bbb-seal-img {
+  width: 300px;
+  height: auto;
+  animation: blueGlow 1.5s infinite alternate;
+}
+
+@keyframes blueGlow {
+  from {
+    box-shadow: 0 0 10px #0077cc, 0 0 20px #3399ff;
+    opacity: 0.9;
+  }
+  to {
+    box-shadow: 0 0 20px #66ccff, 0 0 30px #3399ff;
+    opacity: 1;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="Bobcat.jpg" alt="Bobcat clearing land">
+    <div class="header-content">
+      <h1>R & G Land Clearing LLC</h1>
+      <p>Clearing the way for your next project</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#safety">Safety</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="services" class="section services">
+    <h2 style="text-align: center; font-size: 2em; margin-bottom: 30px;">Our Services</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <h3>🏠 Full Residential Demolition</h3>
+        <p>Safe teardown of homes and structures with debris removal and site prep.</p>
+      </div>
+      <div class="service-card">
+        <h3>🏚️ Garage & Shed Removal</h3>
+        <p>We remove standalone structures quickly and cleanly, readying your space for new use.</p>
+      </div>
+      <div class="service-card">
+        <h3>🧱 Interior Strip-Outs</h3>
+        <p>Selective demolition for renovations, including drywall, flooring, and fixtures.</p>
+      </div>
+      <div class="service-card">
+        <h3>🧹 Site Cleanup & Hauling</h3>
+        <p>Post-demo cleanup with responsible hauling and disposal of all materials.</p>
+      </div>
+      <div class="service-card">
+        <h3>📄 Permits & Utility Disconnects</h3>
+        <p>We handle the paperwork and coordinate safe utility shutdowns before demolition begins.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="safety" class="section safety">
+    <div class="safety-content">
+      <h2>🛡️ Safety First</h2>
+      <p>We follow strict safety protocols and comply with all local regulations to ensure every demolition is performed responsibly. Our crew is trained, licensed, insured, and bonded.</p>
+    </div>
+  </section>
+
+  <section id="testimonials" class="section testimonials">
+    <h2 style="text-align: center; font-size: 2em; margin-bottom: 30px;">What Clients Say</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <img src="Ona.jpg" alt="Trish W." class="testimonial-img">
+        <div class="testimonial-overlay">
+          <p>"Great service and did what I asked, will use again in the future!!!"</p>
+          <h4>Trish W.</h4>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <img src="ThomasG.jpg" alt="Tommy P." class="testimonial-img">
+        <div class="testimonial-overlay">
+          <p>"Excellent service. Took pride in their work. Very pleased with the work they did on our property. Highly recommend."</p>
+          <h4>Tommy P.</h4>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <img src="Thomas.jpg" alt="Andrew S." class="testimonial-img">
+        <div class="testimonial-overlay">
+          <p>"The site was spotless when they finished."</p>
+          <h4>Andrew S.</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section id="contact" class="section contact">
+  <h2>Contact Us</h2>
+  <p>Email: 
+    <a href="mailto:randglandclearing@icloud.com">
+      randglandclearing@icloud.com
+    </a>
+  </p>
+  <p>Phone: 
+    <a href="tel:+17064833851">(706) 483-3851</a>
+  </p>
+  <p>Phone: 
+    <a href="tel:+17064838342">(706) 483-8342</a>
+  </p>
+  <p>Address: 
+    <a href="https://www.google.com/maps/place/141+Casson+Hts,+Old+Fort,+TN+37362" 
+       target="_blank" 
+       rel="noopener noreferrer">
+      141 Casson Hts, Old Fort, TN 37362
+    </a>
+  </p>
+  <div class="bbb-seal">
+    <a href="https://www.bbb.org/us/tn/old-fort/profile/demolition-contractors/r-g-land-clearing-llc-0483-80011887/#sealclick" 
+       target="_blank" 
+       rel="nofollow">
+      <img src="https://seal-chattanooga.bbb.org/seals/blue-seal-200-42-bbb-80011887.png" 
+           alt="R&G Land Clearing LLC BBB Business Review" 
+           class="bbb-seal-img" />
+    </a>
+  </div>
+  </section>
+   <footer>
+    <p>&copy; 2025 R &amp; G Land Clearing LLC. All rights reserved.</p>
+  </footer>
+</html>
